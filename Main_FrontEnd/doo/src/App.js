@@ -8,14 +8,14 @@ import { SignUpPage } from './Components/SignUpPage';
 function App() {
   return (
     <div className="App">
-     <h1>Shoaib Patel </h1>
-     <Routes>
-      <Route path="/" element={<HomePage />}></Route>
-      <Route path="/login" element={<LoginPage />}></Route>
-      <Route path="/signup" element={<SignUpPage />}></Route>
-     </Routes>
-    
-    </div>
+       <h1>Shoaib Patel </h1>
+             <Routes>
+                  <Route path="/" element={<HomePage />}></Route>
+                  <Route path="/login" element={<LoginPage />}></Route>
+                  <Route path="/signup" element={<SignUpPage />}></Route>
+             </Routes>
+
+      </div>
   );
 }
 
