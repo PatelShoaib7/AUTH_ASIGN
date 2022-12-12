@@ -31,18 +31,22 @@ export const SignUpPage = () =>
     //   ( console.log(data)
     //   ))
     //  }
+   const  handleSubmit=()=>{
+        console.log("form Subbmitted"
+   }
  
     
   return (
     <div>  <h1>SignUpPage</h1>  
         <div>
-          {/*  */}
+         <form onSubmit={handleSubmit}>
+     
                 <input placeholder='Enter name'  name='name' onChange={handleChange} value={user.name} />
                 <input placeholder='Enter UserName' name='username' onChange={handleChange}  value={user.username} />
                 <input placeholder='Enter Email' name='email' onChange={handleChange} value={user.email} />
                 <input placeholder='Enter password' name='password ' onChange={handleChange}  value={user.password}/>
                <input type='submit'/>
-          
+          </form>
           </div>
     </div>
    
