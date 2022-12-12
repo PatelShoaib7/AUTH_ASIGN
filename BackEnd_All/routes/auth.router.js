@@ -2,9 +2,6 @@ const express = require('express');
 const {Router, json}= require("express");
 const UserModel = require('../model1/User');
 const authRouter = Router();
-
-
-
 authRouter.post("/signup", async(req, res)=>{
      console.log(req.body)
      const result = await UserModel(req.body)
@@ -30,15 +27,12 @@ authRouter.post("/login", async(req, res)=>{
     const CheckUser= await UserModel.find(req.body)
    if(CheckUser.length >=1){
     let {name , _id}= CheckUser[0];
-   const payload ={
-    _id,
-    name,
-    token:12345 
-   }
+   const payload ={  _id, name,  token:12345   }
     res.send(payload)
    }else{
        res.send("Wrong Credentials")
-   } //res.send("Login SucessFul")
+   }
+     //res.send("Login SucessFul")
 })
 
 module.exports=authRouter
