@@ -6,8 +6,8 @@ export const HomePage = () =>
   return (
     <div>
             <h1>Home Page</h1>
-          <button onClick={()=> navigate("/login")}>Login</button>
-          <button onClick={()=>navigate("/signup")}>SignUp</button>
+            <button onClick={()=> navigate("/login")}>Login</button>
+            <button onClick={()=>navigate("/signup")}>SignUp</button>
     </div>
   )
 }
