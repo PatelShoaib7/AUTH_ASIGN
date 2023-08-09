@@ -32,7 +32,5 @@ authRouter.post("/login", async(req, res)=>{
    }else{
        res.send("Wrong Credentials")
    }
-     //res.send("Login SucessFul")
 })
-
 module.exports=authRouter
